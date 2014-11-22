@@ -1,0 +1,8 @@
+{% extends "homepage/base.html" %}
+{% load i18n static %}
+
+{% block content %}
+    <a href="{{ short_url }}"></i>Your short link</a><br/>
+    redirect url is - {{ object.url }}<br/>
+    redirects count - {{ object.count_redirects }}
+{% endblock %}

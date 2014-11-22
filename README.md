@@ -1,4 +1,0 @@
-shortlink
-=========
-
-short link service

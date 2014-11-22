@@ -1,0 +1,10 @@
+{% extends "homepage/base.html" %}
+{% load i18n static %}
+
+{% block content %}
+    main page
+    <ul>
+        <li><a href="{% url 'tracking:create' %}"><i class="icon icon-case">&nbsp;</i>{% trans "Create new short link" %}</a></li>
+        <li><a href="{% url 'tracking:list' %}"><i class="icon icon-case">&nbsp;</i>{% trans "Short links list" %}</a></li>
+    </ul>
+{% endblock %}

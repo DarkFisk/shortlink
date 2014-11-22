@@ -1,0 +1,12 @@
+{% extends "homepage/base.html" %}
+{% load i18n static %}
+
+{% block content %}
+    <form method="post">
+        <table>
+            {% csrf_token %}
+            {{ form }}
+        </table>
+        <button>Save</button>
+    </form>
+{% endblock %}

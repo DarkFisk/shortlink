@@ -1,0 +1,10 @@
+{% extends "homepage/base.html" %}
+{% load i18n static %}
+
+{% block content %}
+    <ul>
+        {% for link in object_list %}
+            <li><a href="{% url 'tracking:detail' link.slug %}">{{link.url}}</a></li>
+        {% endfor %}
+    </ul>
+{% endblock %}
